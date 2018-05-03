@@ -31,3 +31,6 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
     import Element from 'element-ui'
     import 'element-ui/lib/theme-default/index.css'
     Vue.use(Element)
+
+
+断点续传功能：https://www.cnblogs.com/xiahj/p/8529545.html
