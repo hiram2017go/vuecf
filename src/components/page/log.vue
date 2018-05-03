@@ -6,7 +6,16 @@
         <el-input placeholder="请输入姓名进行搜索..." style="width:30%">
           <el-button slot="append" class="el-icon-search"></el-button>
         </el-input>
-     </div>
+      </div>
+      <br>
+      <div>
+    <el-radio-group v-model="radio3">
+      <el-radio-button label="上海"  border ></el-radio-button>
+      <el-radio-button border label="北京"></el-radio-button>
+      <el-radio-button border label="广州"></el-radio-button>
+      <el-radio-button border label="深圳"></el-radio-button>
+    </el-radio-group>
+  </div>
      <hr>
       <div class="billtable">
         <el-table :data="tableData"   stripe fit>
@@ -64,6 +73,7 @@
         name: '',
         data: function () {
             return {
+               radio3: '上海',
               tableData: [{
                 date: '2017-07-21',
                 time: '08:40',
